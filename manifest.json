@@ -3,6 +3,8 @@
     "short_name": "Match 3",
     "start_url": ".",
     "display": "standalone",
+    "background_color": "#558B2F",
+    "theme_color": "#558B2F",
     "description": "A match-3 puzzle game.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,

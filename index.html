@@ -19,7 +19,11 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A match-3 puzzle game.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#9CCC65">
+  <meta name="color-scheme" content="light">
+  <style>
+    html, body { margin: 0; height: 100%; background: #558B2F; }
+  </style>
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -34,18 +38,6 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div id="safe-area-probe" style="position:fixed;top:0;left:0;width:0;height:0;visibility:hidden;pointer-events:none;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);"></div>
-  <script>
-    window.safeAreaInsets = function () {
-      var s = getComputedStyle(document.getElementById("safe-area-probe"));
-      return {
-        top: parseFloat(s.paddingTop) || 0,
-        right: parseFloat(s.paddingRight) || 0,
-        bottom: parseFloat(s.paddingBottom) || 0,
-        left: parseFloat(s.paddingLeft) || 0
-      };
-    };
-  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader

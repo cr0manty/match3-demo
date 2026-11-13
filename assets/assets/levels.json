@@ -25,6 +25,17 @@
       "score": 6000
     }
   },
+  "planeTargets": {
+    "goalTile": 10,
+    "bubbleGoal": 17,
+    "iceGoal": 16,
+    "stoneGoal": 15,
+    "stone": 9,
+    "bubble": 11,
+    "ice": 8,
+    "tile": 2,
+    "booster": 1
+  },
   "levels": [
     {
       "name": "1. First Steps",

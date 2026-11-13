@@ -1,1742 +1,558 @@
 {
-  "scoring": {
-    "match": {
-      "3": 30,
-      "4": 80,
-      "5": 160,
-      "6": 260
-    },
-    "matchPerExtraTile": 100,
-    "boosters": {
-      "rocket": 120,
-      "bomb": 160,
-      "rainbow": 300,
-      "plane": 140
-    },
-    "blastTile": 15,
-    "blockerHit": 40,
-    "unusedMove": 20
-  },
-  "stars": {
-    "two": {
-      "score": 3000
-    },
-    "three": {
-      "score": 6000
-    }
-  },
-  "planeTargets": {
-    "goalTile": 10,
-    "bubbleGoal": 17,
-    "iceGoal": 16,
-    "stoneGoal": 15,
-    "stone": 9,
-    "bubble": 11,
-    "ice": 8,
-    "tile": 2,
-    "booster": 1
-  },
   "levels": [
     {
-      "name": "1. First Steps",
-      "moves": 22,
-      "grid": [
-        "3 3 1 3 1 2",
-        "3 2 1 1 2 3",
-        "1 3 2 3 1 1",
-        "1 3 2 1 1 2",
-        "3 2 3 3 2 1",
-        "2 2 3 1 3 3"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1100
-        },
-        "three": {
-          "score": 1600
-        }
-      }
-    },
-    {
-      "name": "2. Two Colors",
-      "moves": 24,
-      "grid": [
-        "3 2 2 3 1 2",
-        "1 3 3 1 1 3",
-        "3 3 2 2 3 2",
-        "2 1 3 1 1 3",
-        "3 2 3 3 1 3",
-        "3 3 1 1 3 1"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 10
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 10
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1200
-        },
-        "three": {
-          "score": 1800
-        }
-      }
-    },
-    {
-      "name": "3. Four Colors",
-      "moves": 24,
-      "grid": [
-        "3 3 1 1 2 4 2",
-        "1 4 2 1 3 3 4",
-        "3 1 2 4 3 1 3",
-        "2 2 1 4 1 1 2",
-        "3 3 1 3 3 4 4",
-        "1 4 4 2 3 4 2",
-        "2 3 4 1 4 1 4"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 14
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1200
-        },
-        "three": {
-          "score": 1800
-        }
-      }
-    },
-    {
-      "name": "4. Wide Board",
-      "moves": 24,
-      "grid": [
-        "2 2 4 1 4 1 4 2",
-        "2 4 1 1 3 2 1 3",
-        "3 1 4 4 1 2 1 1",
-        "3 1 1 3 4 4 3 2",
-        "1 4 2 4 2 3 2 4",
-        "1 4 1 2 4 2 1 3"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1400
-        },
-        "three": {
-          "score": 2200
-        }
-      }
-    },
-    {
-      "name": "5. Rare Blue",
-      "moves": 26,
-      "grid": [
-        "2 2 1 2 2 1 2",
-        "4 4 1 1 2 1 2",
-        "2 4 3 2 1 4 4",
-        "4 1 4 3 2 4 1",
-        "1 2 1 4 1 1 2",
-        "2 2 1 4 1 4 4",
-        "2 4 2 2 4 2 4"
-      ],
-      "colorWeights": {
-        "1": 3,
-        "2": 3,
-        "3": 1.4,
-        "4": 3
-      },
-      "goals": [
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 10
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2300
-        },
-        "three": {
-          "score": 3400
-        }
-      }
-    },
-    {
-      "name": "6. Rocket Launch",
-      "moves": 24,
-      "grid": [
-        "4 3 3 2 4 4 2",
-        "3 2 4 1 2 4 1",
-        "2 1 4 4 2 2 4",
-        "2 2 3 3 1 3 2",
-        "4 4 3 2 1 4 R",
-        "4 1 4 3 3 1 1",
-        "1 4 C 3 4 1 4"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rocket",
-          "count": 3
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2300
-        },
-        "three": {
-          "score": 3500
-        }
-      }
-    },
-    {
-      "name": "7. Bomb Squad",
-      "moves": 24,
-      "grid": [
-        "3 1 2 3 3 1 2",
-        "3 1 4 4 2 4 2",
-        "2 3 2 3 3 4 B",
-        "4 2 4 2 4 3 1",
-        "3 2 1 B 4 4 2",
-        "1 4 4 3 2 4 4",
-        "1 4 3 4 3 1 3"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "bomb",
-          "count": 3
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3400
-        },
-        "three": {
-          "score": 5100
-        }
-      }
-    },
-    {
-      "name": "8. Take Off",
-      "moves": 24,
-      "grid": [
-        "1 1 2 4 3 3 4",
-        "1 4 1 3 4 2 2",
-        "P 2 1 2 4 2 3",
-        "4 4 2 2 3 3 4",
-        "1 4 1 3 4 3 2",
-        "3 1 3 2 P 2 3",
-        "1 3 4 1 1 2 4"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "plane",
-          "count": 3
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2000
-        },
-        "three": {
-          "score": 3100
-        }
-      }
-    },
-    {
-      "name": "9. Rainbow Road",
-      "moves": 30,
-      "grid": [
-        "3 3 2 2 1 2 2",
-        "3 5 2 1 5 5 1",
-        "1 1 4 2 4 2 4",
-        "3 3 5 1 3 5 3",
-        "2 3 4 5 3 1 5",
-        "W 2 3 1 4 1 5",
-        "4 1 5 4 4 2 3"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rainbow",
-          "count": 2
-        },
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 10
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 4400
-        },
-        "three": {
-          "score": 6600
-        }
-      }
-    },
-    {
-      "name": "10. Booster Party",
-      "moves": 22,
-      "grid": [
-        "1 3 4 2 2 1 4 1",
-        "2 3 4 2 P 2 1 W",
-        "3 1 1 4 3 2 2 1",
-        "2 4 2 R 1 4 3 B",
-        "4 2 4 1 4 3 2 2",
-        "3 2 3 3 2 2 4 3",
-        "1 4 3 2 4 2 1 2",
-        "2 3 4 3 3 1 2 2"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "count": 6
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3400
-        },
-        "three": {
-          "score": 5200
-        }
-      },
-      "scoring": {
-        "boosters": {
-          "rainbow": 500,
-          "bomb": 300,
-          "rocket": 200,
-          "plane": 240
-        }
-      }
-    },
-    {
-      "name": "11. Frozen Start",
-      "moves": 24,
-      "grid": [
-        "2 3 2 2 4 I4",
-        "2 4 4 3 2 2",
-        "3 1 1 2 3 4",
-        "4 1 4 I3 3 2",
-        "2 4 3 4 I1 2",
-        "3 3 1 I4 3 1"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 10
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2200
-        },
-        "three": {
-          "score": 3300
-        }
-      }
-    },
-    {
-      "name": "12. Cold Snap",
-      "moves": 24,
-      "grid": [
-        "I3 2 2 I4 4 3 2",
-        "2 1 4 3 I1 2 3",
-        "1 3 4 3 1 I4 2",
-        "1 2 3 1 3 2 3",
-        "2 2 4 1 2 3 3",
-        "4 I3 4 I3 3 4 I4",
-        "3 3 2 4 4 3 3"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 4100
-        },
-        "three": {
-          "score": 6100
-        }
-      }
-    },
-    {
-      "name": "13. Cracked",
-      "moves": 24,
-      "grid": [
-        "2 1 4 2 3 3 I2",
-        "1 J4 2 3 I2 1 1",
-        "I1 1 3 1 4 1 3",
-        "2 4 1 4 3 J4 3",
-        "4 3 1 J4 1 I4 4",
-        "J4 2 3 1 4 J3 2",
-        "2 2 4 3 I4 1 2"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 5200
-        },
-        "three": {
-          "score": 7800
-        }
-      }
-    },
-    {
-      "name": "14. Ice Cubes",
-      "moves": 30,
-      "grid": [
-        "3 1 5 I3 3 4 3 I2",
-        "3 5 4 4 3 I5 2 2",
-        "I1 5 4 3 I5 4 3 4",
-        "3 2 5 4 4 I5 5 2",
-        "5 3 5 5 3 4 1 2",
-        "4 5 4 I3 1 3 I1 4",
-        "2 4 5 1 I4 3 4 2",
-        "1 1 I3 4 1 2 5 1"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 5000
-        },
-        "three": {
-          "score": 7500
-        }
-      }
-    },
-    {
-      "name": "15. Thaw",
-      "moves": 22,
-      "grid": [
-        "3 2 I2 1 1 B 4",
-        "2 4 4 2 1 4 I1",
-        "1 2 I4 4 I3 1 R",
-        "I1 1 3 1 4 3 I2",
-        "4 3 4 2 1 1 2",
-        "4 B 4 3 3 1 3",
-        "I2 4 3 I4 1 2 3"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "boosters",
-          "booster": "bomb",
-          "count": 2
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 4900
-        },
-        "three": {
-          "score": 7400
-        }
-      }
-    },
-    {
-      "name": "16. Cut Corners",
-      "moves": 24,
-      "grid": [
-        "0 0 1 1 3 0 0",
-        "0 1 1 4 2 3 0",
-        "4 2 2 4 4 1 1",
-        "1 1 3 2 4 3 1",
-        "1 2 2 3 1 1 4",
-        "0 2 4 4 1 2 0",
-        "0 0 2 2 3 0 0"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 14
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1400
-        },
-        "three": {
-          "score": 2100
-        }
-      }
-    },
-    {
-      "name": "17. Window",
-      "moves": 24,
-      "grid": [
-        "1 1 4 3 4 4 1",
-        "1 4 3 2 3 1 4",
-        "2 2 0 0 0 1 3",
-        "4 4 0 4 0 4 1",
-        "3 1 0 0 0 2 4",
-        "3 4 2 2 3 1 1",
-        "2 1 3 1 3 4 2"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1400
-        },
-        "three": {
-          "score": 2100
-        }
-      }
-    },
-    {
-      "name": "18. Diamond",
-      "moves": 24,
-      "grid": [
-        "0 0 0 0 2 0 0 0 0",
-        "0 0 0 2 2 1 0 0 0",
-        "0 0 4 2 B 3 4 0 0",
-        "0 3 4 4 3 4 2 2 0",
-        "1 2 3 4 4 1 1 4 2",
-        "0 4 1 3 1 4 4 1 0",
-        "0 0 3 4 3 4 2 0 0",
-        "0 0 0 1 1 2 0 0 0",
-        "0 0 0 0 2 0 0 0 0"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 16
-        },
-        {
-          "type": "boosters",
-          "booster": "bomb",
-          "count": 2
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2100
-        },
-        "three": {
-          "score": 3200
-        }
-      }
-    },
-    {
-      "name": "19. Pillars",
-      "moves": 30,
-      "grid": [
-        "2 1 1 3 3 1 2 1",
-        "3 3 2 I4 2 2 3 4",
-        "I1 2 0 4 3 0 2 1",
-        "3 1 4 0 0 4 3 4",
-        "2 4 4 0 0 3 1 2",
-        "2 4 0 4 3 0 4 I3",
-        "1 I1 2 4 2 4 4 1",
-        "4 3 4 3 4 1 2 2"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3100
-        },
-        "three": {
-          "score": 4600
-        }
-      }
-    },
-    {
-      "name": "20. Waterfall",
-      "moves": 24,
-      "grid": [
-        "1 4 1 4 4 3 1",
-        "1 1 3 4 1 4 4",
-        "4 2 2 1 3 3 1",
-        "1 0 0 3 0 0 4",
-        "1 0 1 1 2 0 4",
-        "3 3 1 3 2 2 1",
-        "2 2 4 P 3 3 4",
-        "3 4 1 3 4 1 4"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 16
-        },
-        {
-          "type": "boosters",
-          "booster": "plane",
-          "count": 2
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1600
-        },
-        "three": {
-          "score": 2300
-        }
-      }
-    },
-    {
-      "name": "21. Plus Sign",
-      "moves": 22,
-      "grid": [
-        "0 0 1 3 0 0",
-        "0 0 2 3 0 0",
-        "4 1 3 4 4 2",
-        "4 C 2 4 2 2",
-        "0 0 2 2 0 0",
-        "0 0 R 3 0 0"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rocket",
-          "count": 3
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1300
-        },
-        "three": {
-          "score": 1900
-        }
-      }
-    },
-    {
-      "name": "22. Lucky Star",
-      "moves": 16,
-      "grid": [
-        "1 1 4 1 1 3 2",
-        "2 1 4 3 M 2 1",
-        "2 3 3 4 2 3 M",
-        "3 2 1 3 3 4 4",
-        "4 2 1 4 2 2 3",
-        "2 4 3 2 1 2 2",
-        "4 4 1 1 4 3 3"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 18
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1800
-        },
-        "three": {
-          "score": 2700
-        }
-      }
-    },
-    {
-      "name": "23. Star Bonus",
-      "moves": 16,
-      "grid": [
-        "3 3 4 3 5 5 1 3",
-        "1 M3 4 1 2 4 2 3",
-        "2 2 1 5 2 2 1 5",
-        "4 M3 5 1 5 1 2 3",
-        "2 3 4 5 3 4 1 M5",
-        "3 1 4 2 1 5 2 5",
-        "2 3 1 1 2 1 M3 3",
-        "1 2 4 1 3 1 3 2"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 18
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2000
-        },
-        "three": {
-          "score": 3000
-        }
-      }
-    },
-    {
-      "name": "24. Starfall",
-      "moves": 18,
-      "grid": [
-        "2 2 3 2 1 1 I4",
-        "4 1 4 4 I1 M4 3",
-        "1 1 3 I2 3 2 3",
-        "2 4 1 4 3 1 2",
-        "M4 4 I2 2 1 2 3",
-        "1 1 4 1 I4 4 2",
-        "3 M4 4 1 3 3 2"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3900
-        },
-        "three": {
-          "score": 5800
-        }
-      }
-    },
-    {
-      "name": "25. Moves Matter",
-      "moves": 18,
-      "grid": [
-        "M 1 3 5 2 2 5 4",
-        "2 1 3 1 4 1 W 5",
-        "4 4 1 3 1 3 4 3",
-        "4 2 5 3 5 4 3 4",
-        "1 3 1 4 4 2 3 2",
-        "5 1 2 2 3 1 5 3",
-        "1 2 3 1 B 4 3 1",
-        "M 5 3 M 1 1 2 3"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 24
-        },
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 18
-        },
-        {
-          "type": "boosters",
-          "booster": "rainbow",
-          "count": 1
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2900
-        },
-        "three": {
-          "score": 4300
-        }
-      },
-      "scoring": {
-        "unusedMove": 40
-      }
-    },
-    {
-      "name": "26. Bubble Bath",
-      "moves": 22,
-      "grid": [
-        "2 4 3 1 2 3 2",
-        "3 2 3 2 2 4 4",
-        "2 4 4 3 1 2 1",
-        "3 4 1 4 4 1 1",
-        "3 3 4 1 4 3 4",
-        "1 4 U 4 3 4 4",
-        "2 4 3 2 2 U 1"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1400
-        },
-        "three": {
-          "score": 2200
-        }
-      }
-    },
-    {
-      "name": "27. Growing Foam",
-      "moves": 22,
-      "grid": [
-        "3 2 3 3 2 3 1",
-        "3 U 2 U 1 1 3",
-        "U 1 4 1 3 3 2",
-        "4 2 4 3 2 3 3",
-        "1 2 1 2 1 1 4",
-        "2 4 1 4 4 2 2",
-        "4 2 2 4 3 3 1"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1300
-        },
-        "three": {
-          "score": 1900
-        }
-      }
-    },
-    {
-      "name": "28. Pop It",
-      "moves": 22,
-      "grid": [
-        "4 2 1 3 4 2 5 3",
-        "4 4 2 5 4 1 4 4",
-        "5 U 4 2 3 3 4 5",
-        "B 3 4 1 1 U 3 2",
-        "4 1 U 5 5 4 3 U",
-        "4 1 5 4 1 2 1 2",
-        "3 4 5 1 1 5 1 3",
-        "4 2 3 3 2 3 5 4"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2900
-        },
-        "three": {
-          "score": 4400
-        }
-      }
-    },
-    {
-      "name": "29. Foam Party",
-      "moves": 24,
-      "grid": [
-        "0 0 2 1 1 4 0 0",
-        "0 U 4 1 I3 4 1 0",
-        "4 1 1 3 1 2 2 3",
-        "3 2 U 1 4 I4 2 1",
-        "1 3 3 2 1 3 4 2",
-        "1 U 4 2 2 I1 2 2",
-        "0 3 3 1 3 1 3 0",
-        "0 0 1 1 I3 3 0 0"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3500
-        },
-        "three": {
-          "score": 5200
-        }
-      }
-    },
-    {
-      "name": "30. Soap Opera",
-      "moves": 22,
-      "grid": [
-        "5 2 5 1 4 4 5 3",
-        "2 1 2 4 4 U 3 2",
-        "1 4 U 2 3 5 2 4",
-        "5 2 4 3 U 5 4 4",
-        "3 5 2 4 3 2 U 3",
-        "4 4 3 3 1 R 4 5",
-        "5 4 5 5 3 2 2 U",
-        "P 5 4 2 1 3 4 1"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "boosters",
-          "count": 4
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1600
-        },
-        "three": {
-          "score": 2500
-        }
-      }
-    },
-    {
-      "name": "31. Rock Solid",
-      "moves": 22,
-      "grid": [
-        "B 1 1 3 4 4 1",
-        "1 4 4 1 3 2 3",
-        "3 1 4 3 3 1 4",
-        "3 1 1 4 1 S1 4",
-        "1 3 3 4 1 2 3",
-        "B 4 3 S3 4 2 2",
-        "3 3 4 4 3 3 1"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1800
-        },
-        "three": {
-          "score": 2700
-        }
-      }
-    },
-    {
-      "name": "32. Hidden Power",
-      "moves": 22,
-      "grid": [
-        "3 SB 1 2 3 2 4",
-        "3 SR 3 SP 1 4 4",
-        "4 3 4 1 4 4 3",
-        "4 4 2 1 1 3 4",
-        "3 2 3 2 3 2 4",
-        "2 3 1 3 4 4 2",
-        "2 1 B 2 4 1 2"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "count": 6
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2200
-        },
-        "three": {
-          "score": 3300
-        }
-      }
-    },
-    {
-      "name": "33. Stone Garden",
-      "moves": 24,
-      "grid": [
-        "5 2 2 B 1 5 2 3",
-        "P 5 2 2 3 2 2 5",
-        "2 5 S4 1 2 2 1 2",
-        "3 1 1 4 3 4 4 2",
-        "3 3 1 5 5 2 5 4",
-        "S4 2 2 5 2 1 3 5",
-        "3 1 5 3 4 1 4 4",
-        "3 5 S4 2 4 5 S5 4"
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 18
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1900
-        },
-        "three": {
-          "score": 2900
-        }
-      }
-    },
-    {
-      "name": "34. Quarry",
-      "moves": 22,
-      "grid": [
-        "0 0 3 3 2 3 0 0",
-        "0 3 3 4 4 2 2 0",
-        "B 4 2 1 2 4 4 3",
-        "2 S1 2 R 3 3 2 3",
-        "4 3 4 3 3 1 4 4",
-        "2 3 SW 2 S1 1 2 3",
-        "0 S2 2 1 3 3 4 0",
-        "0 0 1 4 4 1 0 0"
-      ],
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rainbow",
-          "count": 1
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 18
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3200
-        },
-        "three": {
-          "score": 4800
-        }
-      }
-    },
-    {
-      "name": "35. Crumble",
-      "moves": 24,
-      "grid": [
-        "4 4 3 5 3 4 1 1",
-        "5 S2 B U 2 5 4 3",
-        "U 4 S5 5 4 1 5 1",
-        "S4 1 3 4 1 4 4 S3",
-        "3 2 1 4 5 4 5 4",
-        "5 3 2 1 5 3 3 B",
-        "5 4 2 5 3 S4 2 5",
-        "3 2 5 2 4 3 2 3"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 1800
-        },
-        "three": {
-          "score": 2600
-        }
-      }
-    },
-    {
-      "name": "36. Deep Freeze",
-      "moves": 30,
-      "grid": [
-        "3 1 3 4 5 U 3 5",
-        "2 4 4 5 4 5 2 1",
-        "4 4 5 2 1 2 1 4",
-        "I2 U I4 2 3 3 4 5",
-        "3 1 3 1 U 1 3 2",
-        "I2 5 1 I4 5 1 4 1",
-        "4 5 I1 4 1 3 4 I2",
-        "1 I3 5 3 1 1 3 3"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 16
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 5600
-        },
-        "three": {
-          "score": 8500
-        }
-      }
-    },
-    {
-      "name": "37. Fortress",
-      "moves": 30,
-      "grid": [
-        "5 2 4 5 2 5 3 2 S2",
-        "I5 3 3 5 U 5 1 4 1",
-        "U 5 2 1 I5 1 4 2 1",
-        "I3 4 3 5 3 2 3 5 2",
-        "1 2 1 3 0 1 4 4 5",
-        "2 3 1 3 1 1 5 5 2",
-        "S2 3 I2 2 1 3 4 4 2",
-        "1 1 5 I2 5 1 5 2 1",
-        "3 1 4 4 S5 3 3 1 5"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 18
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 4400
-        },
-        "three": {
-          "score": 6600
-        }
-      }
-    },
-    {
-      "name": "38. Chain Reaction",
+      "name": "Start",
       "moves": 20,
       "grid": [
-        "I2 4 4 I1 2 P I2 4",
-        "1 1 3 4 B 1 1 4",
-        "3 2 R 1 2 2 1 2",
-        "P 3 2 3 1 4 I2 1",
-        "B R 1 1 4 4 2 4",
-        "4 2 2 B I4 2 1 1",
-        "1 3 3 4 3 2 2 3",
-        "1 4 1 3 3 1 I3 1"
+        "0 1 2 3 0",
+        "1 2 3 1 2",
+        "2 3 1 2 3",
+        "3 1 1 3 1",
+        "1 2 3 1 2",
+        "0 3 1 2 0"
       ],
       "goals": [
         {
-          "type": "blockers"
-        },
-        {
-          "type": "boosters",
-          "count": 8
+          "type": "collect",
+          "color": 1,
+          "count": 12
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 5400
-        },
-        "three": {
-          "score": 8100
-        }
-      }
+      ]
     },
     {
-      "name": "39. Frosty Foam",
-      "moves": 28,
+      "name": "Hole",
+      "moves": 20,
       "grid": [
-        "0 0 0 0 4 0 0 0 0",
-        "0 0 0 2 I1 4 0 0 0",
-        "0 0 I3 2 4 2 3 0 0",
-        "0 U J2 U 1 5 J4 5 0",
-        "4 3 I3 4 3 5 5 3 J4",
-        "0 2 J2 1 1 3 U 3 0",
-        "0 0 4 2 5 5 4 0 0",
-        "0 0 0 M3 J3 4 0 0 0",
-        "0 0 0 0 I1 0 0 0 0"
+        "1 2 3 4 3 2 1",
+        "2 3 4 1 4 3 2",
+        "3 4 0 0 0 4 3",
+        "4 1 0 0 0 1 4",
+        "3 4 0 0 0 4 3",
+        "2 3 4 1 4 3 2",
+        "1 2 3 4 3 2 1"
       ],
+      "colorWeights": {
+        "1": 30,
+        "2": 30,
+        "3": 30,
+        "4": 10
+      },
       "goals": [
-        {
-          "type": "blockers"
-        },
         {
           "type": "collect",
           "color": 2,
-          "count": 16
+          "count": 15
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 3100
-        },
-        "three": {
-          "score": 4700
-        }
-      }
+      ]
     },
     {
-      "name": "40. Rainbow Reef",
-      "moves": 28,
+      "name": "Rocket: 4 in a row",
+      "moves": 15,
       "grid": [
-        "5 U 1 1 U I2 4 2",
-        "2 5 5 6 3 5 3 2",
-        "5 1 U 6 1 W 2 4",
-        "1 5 6 4 4 6 W I3",
-        "1 4 4 5 1 3 5 2",
-        "2 1 2 1 6 4 1 I5",
-        "1 6 6 4 2 6 5 1",
-        "5 1 5 U 2 I2 6 I4"
+        "2 3 2 3 2 3",
+        "3 2 3 2 3 2",
+        "1 1 4 1 2 3",
+        "3 2 1 2 3 2",
+        "2 3 2 3 2 3"
       ],
       "goals": [
         {
-          "type": "blockers"
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Rocket: 4 vertical",
+      "moves": 20,
+      "grid": [
+        "2 3 1 3 2",
+        "3 2 1 2 3",
+        "2 3 4 1 2",
+        "3 2 1 2 3",
+        "2 3 2 3 2",
+        "3 2 3 2 3"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 1,
+          "count": 10
+        },
+        {
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Bomb: L of 5",
+      "moves": 20,
+      "grid": [
+        "2 3 2 3 2 3",
+        "3 2 1 2 3 2",
+        "1 1 4 3 2 3",
+        "2 3 1 2 3 2",
+        "3 2 1 3 2 3"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 3,
+          "count": 10
+        },
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Rainbow: 5 in a row",
+      "moves": 15,
+      "grid": [
+        "2 3 2 3 2 3 2",
+        "3 2 1 2 3 2 3",
+        "1 1 4 1 1 2 3",
+        "2 3 2 3 2 3 2",
+        "3 2 3 2 3 2 3"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Chain: bomb hits boosters",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 C 2 3",
+        "1 2 W B 2 3 1",
+        "2 3 R 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
         },
         {
           "type": "boosters",
           "booster": "rainbow",
-          "count": 2
+          "count": 1
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 4600
-        },
-        "three": {
-          "score": 6900,
-          "movesLeft": 1
-        }
-      }
+      ]
     },
     {
-      "name": "41. Colorful",
-      "moves": 26,
+      "name": "Bomb + bomb",
+      "moves": 20,
       "grid": [
-        "5 5 3 B 5 5 2 4",
-        "6 2 5 6 1 4 5 6",
-        "2 2 1 3 4 5 2 3",
-        "5 6 3 1 2 3 1 6",
-        "4 3 4 4 1 3 2 5",
-        "2 3 2 4 1 6 6 2",
-        "2 1 3 3 6 4 6 6",
-        "5 6 3 5 3 4 1 2"
+        "1 2 3 1 2 3 1",
+        "2 3 C 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 B B 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
       ],
       "goals": [
-        {
-          "type": "collect",
-          "color": 5,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 6,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 14
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2500
-        },
-        "three": {
-          "score": 3700,
-          "movesLeft": 1
-        }
-      },
-      "scoring": {
-        "match": {
-          "3": 40,
-          "4": 100,
-          "5": 200
-        }
-      }
-    },
-    {
-      "name": "42. Rainbow Garden",
-      "moves": 24,
-      "grid": [
-        "0 0 M4 6 6 3 M4 0 0",
-        "0 6 4 I6 4 3 6 4 0",
-        "1 2 1 3 1 1 4 6 2",
-        "4 5 1 3 4 I3 1 5 5",
-        "6 5 3 4 1 3 4 6 I4",
-        "5 2 6 4 3 5 5 2 2",
-        "1 3 I4 2 4 3 6 2 1",
-        "0 4 3 4 2 I6 4 W 0",
-        "0 0 3 3 4 1 2 0 0"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 6,
-          "count": 18
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3700
-        },
-        "three": {
-          "score": 5500,
-          "movesLeft": 1
-        }
-      }
-    },
-    {
-      "name": "43. Seven Colors",
-      "moves": 26,
-      "grid": [
-        "5 5 6 2 7 5 5 B",
-        "4 4 7 3 5 1 5 5",
-        "3 1 3 2 5 3 4 1",
-        "4 6 6 5 2 4 5 7",
-        "C 2 2 7 3 5 5 4",
-        "1 5 4 R 2 5 3 1",
-        "3 4 5 4 1 2 6 7",
-        "5 6 2 7 5 7 5 6"
-      ],
-      "colorWeights": {
-        "1": 1,
-        "2": 1,
-        "3": 1,
-        "4": 1,
-        "5": 1,
-        "6": 1,
-        "7": 0.8
-      },
-      "goals": [
-        {
-          "type": "collect",
-          "color": 7,
-          "count": 12
-        },
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 18
-        },
-        {
-          "type": "boosters",
-          "count": 5
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 2400
-        },
-        "three": {
-          "score": 3500,
-          "movesLeft": 1
-        }
-      }
-    },
-    {
-      "name": "44. Cracked Foam",
-      "moves": 26,
-      "grid": [
-        "2 2 4 4 5 J6 5 2 1",
-        "4 U 6 1 2 4 4 1 4",
-        "3 1 4 6 J2 5 5 4 2",
-        "2 5 2 6 1 2 4 2 4",
-        "2 5 6 2 J5 6 2 6 6",
-        "6 J6 3 J6 6 1 U J1 2",
-        "3 5 U 1 S4 J1 5 5 3",
-        "6 1 2 2 6 6 J3 4 U",
-        "3 6 5 3 2 4 5 2 S3"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 18
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3100
-        },
-        "three": {
-          "score": 4600,
-          "movesLeft": 1
-        }
-      }
-    },
-    {
-      "name": "45. Stone Ice",
-      "moves": 32,
-      "grid": [
-        "0 4 3 2 S4 4 1 3 0",
-        "3 2 5 4 5 2 1 4 2",
-        "I4 3 6 S4 5 B 4 P 6",
-        "5 1 3 3 S4 P I2 3 2",
-        "5 3 4 S5 5 6 1 I3 3",
-        "1 2 2 6 1 2 5 5 I3",
-        "6 I5 5 1 6 6 4 3 1",
-        "3 2 6 1 I6 3 2 5 2",
-        "0 I1 2 4 5 4 3 5 0"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "boosters",
-          "booster": "plane",
-          "count": 3
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 3700
-        },
-        "three": {
-          "score": 5600,
-          "movesLeft": 1
-        }
-      }
-    },
-    {
-      "name": "46. Master Class",
-      "moves": 28,
-      "grid": [
-        "0 0 U 5 2 2 I3 0 0",
-        "0 S2 I4 3 5 S1 4 5 0",
-        "2 I1 5 1 3 I3 2 4 1",
-        "3 1 I3 2 1 2 4 I5 4",
-        "2 B 5 1 1 4 1 2 2",
-        "3 2 2 I5 4 5 3 I2 B",
-        "4 3 M 1 1 M 3 4 U",
-        "0 1 U 2 3 4 5 1 0",
-        "0 0 S1 U 5 2 5 0 0"
-      ],
-      "goals": [
-        {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 20
-        },
         {
           "type": "boosters",
           "booster": "bomb",
           "count": 2
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 6200
-        },
-        "three": {
-          "score": 9300,
-          "movesLeft": 1
-        }
-      }
+      ]
     },
     {
-      "name": "47. Hourglass",
-      "moves": 36,
+      "name": "Bomb + row rocket",
+      "moves": 20,
       "grid": [
-        "5 1 4 2 2 4 4 I5 1",
-        "I2 0 5 2 5 3 3 0 4",
-        "3 3 0 4 3 I4 0 5 5",
-        "3 4 5 0 5 0 4 2 3",
-        "2 3 3 I2 0 1 5 U 4",
-        "5 5 3 0 U 0 W 3 I4",
-        "3 5 0 2 4 1 0 1 5",
-        "1 0 4 2 2 1 3 0 2",
-        "P 4 3 3 5 4 2 2 U"
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "C 2 3 B R 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
       ],
       "goals": [
         {
-          "type": "blockers"
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
         },
         {
-          "type": "collect",
-          "color": 2,
-          "count": 18
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 3300
-        },
-        "three": {
-          "score": 4900,
-          "movesLeft": 1
-        }
-      }
+      ]
     },
     {
-      "name": "48. Triple Threat",
-      "moves": 38,
+      "name": "Bomb + column rocket",
+      "moves": 20,
       "grid": [
-        "SW 6 1 2 5 4 2 5 I4",
-        "5 S2 5 2 4 6 1 4 U",
-        "1 6 2 5 2 6 4 1 4",
-        "4 6 6 3 2 2 1 6 1",
-        "5 U 4 2 1 S2 5 2 2",
-        "2 4 5 R 3 5 5 3 3",
-        "2 I6 U 1 2 1 3 I2 3",
-        "5 3 3 5 4 5 I4 3 6",
-        "5 2 1 I1 4 6 5 S5 B"
+        "1 2 3 R 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 B C 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 R 1"
       ],
       "goals": [
         {
-          "type": "blockers"
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
         },
+        {
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Rocket + rocket",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "C 2 3 R C 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Rainbow + bomb",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 W B 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
         {
           "type": "boosters",
           "booster": "rainbow",
           "count": 1
         },
         {
-          "type": "collect",
-          "color": 3,
-          "count": 18
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 4600
-        },
-        "three": {
-          "score": 6900,
-          "movesLeft": 1
-        }
-      }
+      ]
     },
     {
-      "name": "49. Last Stand",
-      "moves": 40,
+      "name": "Rainbow + rocket",
+      "moves": 20,
       "grid": [
-        "4 4 2 5 2 4 M5 I3 6",
-        "J5 2 I4 5 5 1 S1 U 5",
-        "3 3 S2 J2 4 3 J1 5 6",
-        "J1 1 4 3 0 I6 2 I6 2",
-        "1 2 I5 0 0 0 2 4 1",
-        "4 4 6 1 0 1 5 U 5",
-        "4 1 4 5 U 3 3 1 5",
-        "5 1 5 2 1 2 1 6 4",
-        "1 S6 6 5 2 2 J3 U 6"
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 W R 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
       ],
       "goals": [
         {
-          "type": "blockers"
-        },
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 16
-        },
-        {
-          "type": "collect",
-          "color": 6,
-          "count": 16
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 1
         },
         {
           "type": "boosters",
-          "count": 6
+          "booster": "rocket",
+          "count": 1
         }
-      ],
-      "stars": {
-        "two": {
-          "score": 3600
-        },
-        "three": {
-          "score": 5400,
-          "movesLeft": 1
-        }
-      }
+      ]
     },
     {
-      "name": "50. Grand Finale",
-      "moves": 38,
+      "name": "Rainbow + rainbow",
+      "moves": 20,
       "grid": [
-        "4 SB 1 3 3 4 5 I2 1 I3",
-        "I4 6 5 6 U 2 3 M4 3 J2",
-        "S5 5 3 S1 2 5 6 4 B 5",
-        "1 3 5 2 4 3 5 I2 J5 1",
-        "3 S4 3 U 3 1 S5 5 6 1",
-        "3 J1 4 4 3 SP 2 3 J4 4",
-        "2 6 I5 U M4 6 6 I3 1 6",
-        "5 3 1 3 U 4 W 2 I4 1",
-        "5 6 I1 4 5 J6 3 5 1 4",
-        "2 U 4 4 2 5 I3 3 2 6"
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 W W 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
       ],
       "goals": [
         {
-          "type": "blockers"
-        },
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Rainbow + tile",
+      "moves": 15,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 W 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Ice: color match",
+      "moves": 15,
+      "grid": [
+        "2 3 2 3 2 3",
+        "3 1 3 2 3 2",
+        "1 4 I1 1 2 3",
+        "3 2 3 2 3 2",
+        "2 3 2 3 2 3"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 4,
+          "count": 8
+        }
+      ]
+    },
+    {
+      "name": "Ice: blasts",
+      "moves": 20,
+      "grid": [
+        "1 2 C 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 I1 3 I3 2 3",
+        "1 2 3 B 2 3 1",
+        "2 3 1 2 J1 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
         {
           "type": "collect",
           "color": 2,
-          "count": 22
+          "count": 10
         },
         {
           "type": "boosters",
-          "count": 8
+          "booster": "bomb",
+          "count": 1
         }
+      ]
+    },
+    {
+      "name": "Tap and swap singles",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 C 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 B 3 1 2 R 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 W 1 2 3",
+        "1 2 3 1 2 3 1"
       ],
-      "stars": {
-        "two": {
-          "score": 7800
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
         },
-        "three": {
-          "score": 11700,
-          "movesLeft": 1
+        {
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
         }
-      },
-      "scoring": {
-        "boosters": {
-          "rainbow": 600,
-          "bomb": 400
+      ]
+    },
+    {
+      "name": "Plane: 2x2 square",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 4 4 1 2 3",
+        "1 2 4 2 4 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 2,
+          "count": 12
+        },
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
         }
-      }
+      ]
+    },
+    {
+      "name": "Plane: flies to ice",
+      "moves": 15,
+      "grid": [
+        "1 2 3 1 2 3 I1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "J2 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Plane: not into a booster",
+      "moves": 15,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 B 1 2 3 C 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 W 2 3 1 R 3",
+        "1 2 3 1 2 3 1"
+      ]
+    },
+    {
+      "name": "Plane + bomb",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P B 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
+        },
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Plane + rocket",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P R 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
+        },
+        {
+          "type": "boosters",
+          "booster": "rocket",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Plane + plane",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P P 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Plane + rainbow",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P W 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
+        },
+        {
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 1
+        }
+      ]
     }
   ]
 }

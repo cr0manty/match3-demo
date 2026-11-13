@@ -15,7 +15,7 @@
     },
     "blastTile": 15,
     "blockerHit": 40,
-    "unusedMove": 100
+    "unusedMove": 20
   },
   "stars": {
     "two": {
@@ -57,10 +57,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2100
+          "score": 1100
         },
         "three": {
-          "score": 3200
+          "score": 1600
         }
       }
     },
@@ -89,10 +89,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2400
+          "score": 1200
         },
         "three": {
-          "score": 3600
+          "score": 1800
         }
       }
     },
@@ -122,10 +122,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2300
+          "score": 1200
         },
         "three": {
-          "score": 3500
+          "score": 1800
         }
       }
     },
@@ -154,10 +154,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2400
+          "score": 1400
         },
         "three": {
-          "score": 3600
+          "score": 2200
         }
       }
     },
@@ -193,10 +193,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3300
+          "score": 2300
         },
         "three": {
-          "score": 5000
+          "score": 3400
         }
       }
     },
@@ -226,10 +226,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3100
+          "score": 2300
         },
         "three": {
-          "score": 4700
+          "score": 3500
         }
       }
     },
@@ -259,10 +259,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3600
+          "score": 3400
         },
         "three": {
-          "score": 5500
+          "score": 5100
         }
       }
     },
@@ -292,10 +292,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3200
+          "score": 2000
         },
         "three": {
-          "score": 4700
+          "score": 3100
         }
       }
     },
@@ -325,10 +325,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4800
+          "score": 4400
         },
         "three": {
-          "score": 7200
+          "score": 6600
         }
       }
     },
@@ -358,10 +358,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3800
+          "score": 3400
         },
         "three": {
-          "score": 5600
+          "score": 5200
         }
       },
       "scoring": {
@@ -396,10 +396,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3000
+          "score": 2200
         },
         "three": {
-          "score": 4500
+          "score": 3300
         }
       }
     },
@@ -422,10 +422,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4600
+          "score": 4100
         },
         "three": {
-          "score": 7000
+          "score": 6100
         }
       }
     },
@@ -453,10 +453,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5500
+          "score": 5200
         },
         "three": {
-          "score": 8200
+          "score": 7800
         }
       }
     },
@@ -485,10 +485,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4900
+          "score": 5000
         },
         "three": {
-          "score": 7400
+          "score": 7500
         }
       }
     },
@@ -516,10 +516,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5100
+          "score": 4900
         },
         "three": {
-          "score": 7700
+          "score": 7400
         }
       }
     },
@@ -549,10 +549,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2400
+          "score": 1400
         },
         "three": {
-          "score": 3600
+          "score": 2100
         }
       }
     },
@@ -582,10 +582,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2000
+          "score": 1400
         },
         "three": {
-          "score": 2900
+          "score": 2100
         }
       }
     },
@@ -617,10 +617,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3200
+          "score": 2100
         },
         "three": {
-          "score": 4700
+          "score": 3200
         }
       }
     },
@@ -649,10 +649,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3800
+          "score": 3100
         },
         "three": {
-          "score": 5700
+          "score": 4600
         }
       }
     },
@@ -683,10 +683,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2600
+          "score": 1600
         },
         "three": {
-          "score": 3900
+          "score": 2300
         }
       }
     },
@@ -715,10 +715,10 @@
       ],
       "stars": {
         "two": {
-          "score": 1900
+          "score": 1300
         },
         "three": {
-          "score": 2900
+          "score": 1900
         }
       }
     },
@@ -748,10 +748,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2900
+          "score": 1800
         },
         "three": {
-          "score": 4400
+          "score": 2700
         }
       }
     },
@@ -782,10 +782,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2700
+          "score": 2000
         },
         "three": {
-          "score": 4100
+          "score": 3000
         }
       }
     },
@@ -813,10 +813,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4900
+          "score": 3900
         },
         "three": {
-          "score": 7400
+          "score": 5800
         }
       }
     },
@@ -852,14 +852,14 @@
       ],
       "stars": {
         "two": {
-          "score": 4200
+          "score": 2900
         },
         "three": {
-          "score": 6300
+          "score": 4300
         }
       },
       "scoring": {
-        "unusedMove": 200
+        "unusedMove": 40
       }
     },
     {
@@ -886,10 +886,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3000
+          "score": 1400
         },
         "three": {
-          "score": 4500
+          "score": 2200
         }
       }
     },
@@ -912,10 +912,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2200
+          "score": 1300
         },
         "three": {
-          "score": 3400
+          "score": 1900
         }
       }
     },
@@ -944,10 +944,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3300
+          "score": 2900
         },
         "three": {
-          "score": 5000
+          "score": 4400
         }
       }
     },
@@ -976,10 +976,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4100
+          "score": 3500
         },
         "three": {
-          "score": 6200
+          "score": 5200
         }
       }
     },
@@ -1007,10 +1007,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2500
+          "score": 1600
         },
         "three": {
-          "score": 3700
+          "score": 2500
         }
       }
     },
@@ -1040,10 +1040,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2600
+          "score": 1800
         },
         "three": {
-          "score": 4000
+          "score": 2700
         }
       }
     },
@@ -1072,10 +1072,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3100
+          "score": 2200
         },
         "three": {
-          "score": 4600
+          "score": 3300
         }
       }
     },
@@ -1106,10 +1106,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2700
+          "score": 1900
         },
         "three": {
-          "score": 4100
+          "score": 2900
         }
       }
     },
@@ -1140,10 +1140,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3900
+          "score": 3200
         },
         "three": {
-          "score": 5900
+          "score": 4800
         }
       }
     },
@@ -1172,10 +1172,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2600
+          "score": 1800
         },
         "three": {
-          "score": 3900
+          "score": 2600
         }
       }
     },
@@ -1204,10 +1204,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5400
+          "score": 5600
         },
         "three": {
-          "score": 8100
+          "score": 8500
         }
       }
     },
@@ -1237,10 +1237,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5800
+          "score": 4400
         },
         "three": {
-          "score": 8700
+          "score": 6600
         }
       }
     },
@@ -1268,10 +1268,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5800
+          "score": 5400
         },
         "three": {
-          "score": 8600
+          "score": 8100
         }
       }
     },
@@ -1301,10 +1301,10 @@
       ],
       "stars": {
         "two": {
-          "score": 3700
+          "score": 3100
         },
         "three": {
-          "score": 5600
+          "score": 4700
         }
       }
     },
@@ -1333,10 +1333,10 @@
       ],
       "stars": {
         "two": {
-          "score": 5200
+          "score": 4600
         },
         "three": {
-          "score": 7800,
+          "score": 6900,
           "movesLeft": 1
         }
       }
@@ -1373,10 +1373,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2700
+          "score": 2500
         },
         "three": {
-          "score": 4000,
+          "score": 3700,
           "movesLeft": 1
         }
       },
@@ -1414,10 +1414,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4200
+          "score": 3700
         },
         "three": {
-          "score": 6400,
+          "score": 5500,
           "movesLeft": 1
         }
       }
@@ -1462,10 +1462,10 @@
       ],
       "stars": {
         "two": {
-          "score": 2800
+          "score": 2400
         },
         "three": {
-          "score": 4100,
+          "score": 3500,
           "movesLeft": 1
         }
       }
@@ -1496,10 +1496,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4300
+          "score": 3100
         },
         "three": {
-          "score": 6400,
+          "score": 4600,
           "movesLeft": 1
         }
       }
@@ -1530,10 +1530,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4400
+          "score": 3700
         },
         "three": {
-          "score": 6500,
+          "score": 5600,
           "movesLeft": 1
         }
       }
@@ -1569,10 +1569,10 @@
       ],
       "stars": {
         "two": {
-          "score": 7700
+          "score": 6200
         },
         "three": {
-          "score": 11600,
+          "score": 9300,
           "movesLeft": 1
         }
       }
@@ -1603,10 +1603,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4100
+          "score": 3300
         },
         "three": {
-          "score": 6200,
+          "score": 4900,
           "movesLeft": 1
         }
       }
@@ -1642,10 +1642,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4400
+          "score": 4600
         },
         "three": {
-          "score": 6500,
+          "score": 6900,
           "movesLeft": 1
         }
       }
@@ -1685,10 +1685,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4600
+          "score": 3600
         },
         "three": {
-          "score": 6900,
+          "score": 5400,
           "movesLeft": 1
         }
       }
@@ -1724,10 +1724,10 @@
       ],
       "stars": {
         "two": {
-          "score": 4400
+          "score": 7800
         },
         "three": {
-          "score": 6500,
+          "score": 11700,
           "movesLeft": 1
         }
       },

@@ -1,398 +1,6 @@
 {
   "levels": [
     {
-      "name": "Demo: Column rocket",
-      "moves": 15,
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rocket",
-          "count": 2
-        }
-      ],
-      "grid": [
-        "2 2 3 2 1 3 1",
-        "2 3 1 1 2 2 3",
-        "3 3 2 4 3 1 2",
-        "3 4 4 2 4 2 2",
-        "1 3 1 2 2 3 1",
-        "3 3 2 3 2 1 1",
-        "1 2 2 1 3 3 2"
-      ]
-    },
-    {
-      "name": "Demo: Row rocket",
-      "moves": 15,
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rocket",
-          "count": 2
-        }
-      ],
-      "grid": [
-        "3 1 2 3 3 2 2",
-        "2 3 1 4 2 3 2",
-        "2 3 3 4 3 1 3",
-        "3 1 4 2 3 2 1",
-        "1 1 3 4 1 1 3",
-        "3 3 1 1 3 1 2",
-        "1 3 3 2 1 2 2"
-      ]
-    },
-    {
-      "name": "Demo: Bomb",
-      "moves": 15,
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "bomb",
-          "count": 2
-        }
-      ],
-      "grid": [
-        "1 2 2 1 1 2 1",
-        "3 3 2 1 2 2 3",
-        "3 1 3 4 1 3 2",
-        "2 3 3 4 1 2 1",
-        "3 3 4 1 4 3 2",
-        "2 1 1 4 1 2 1",
-        "2 3 2 2 3 1 3"
-      ]
-    },
-    {
-      "name": "Demo: Rainbow",
-      "moves": 15,
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "rainbow",
-          "count": 1
-        }
-      ],
-      "grid": [
-        "1 1 2 1 1 3 2",
-        "3 1 1 3 2 1 1",
-        "1 2 1 4 3 1 2",
-        "1 4 4 1 4 4 3",
-        "2 3 1 2 2 1 3",
-        "3 2 3 2 3 2 1",
-        "2 1 3 1 1 2 1"
-      ]
-    },
-    {
-      "name": "Demo: Plane",
-      "moves": 15,
-      "goals": [
-        {
-          "type": "boosters",
-          "booster": "plane",
-          "count": 2
-        }
-      ],
-      "grid": [
-        "1 2 2 3 2 2 1",
-        "3 3 2 1 3 1 2",
-        "1 3 3 2 1 3 2",
-        "3 2 4 4 2 3 1",
-        "2 3 4 1 4 1 2",
-        "2 1 1 2 3 3 2",
-        "3 2 3 2 2 3 1"
-      ]
-    },
-    {
-      "name": "Demo: Booster combos",
-      "moves": 12,
-      "goals": [
-        {
-          "type": "boosters",
-          "count": 12
-        }
-      ],
-      "grid": [
-        "3 2 2 1 1 2 3",
-        "2 B B 3 R C 3",
-        "1 3 1 2 3 1 1",
-        "2 W C 1 P B 1",
-        "2 3 2 3 2 3 2",
-        "1 P P 3 W W 3",
-        "1 2 1 1 2 2 3"
-      ]
-    },
-    {
-      "name": "Demo: Chain reaction",
-      "moves": 5,
-      "goals": [
-        {
-          "type": "boosters",
-          "count": 6
-        }
-      ],
-      "grid": [
-        "2 2 3 3 1 1 P",
-        "2 3 1 1 2 2 3",
-        "3 C 3 3 2 3 3",
-        "B 2 3 R 3 2 C",
-        "3 1 2 2 1 3 2",
-        "2 3 3 1 1 3 1",
-        "3 2 1 2 2 1 B"
-      ]
-    },
-    {
-      "name": "Demo: Ice",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "blockers"
-        }
-      ],
-      "grid": [
-        "1 2 3 2 3 2 1",
-        "2 1 3 3 1 3 1",
-        "1 2 I1 J3 I3 2 2",
-        "2 3 J2 I2 J3 2 1",
-        "1 3 I3 J2 I2 3 1",
-        "1 2 1 1 3 3 2",
-        "2 3 3 2 1 1 2"
-      ]
-    },
-    {
-      "name": "Demo: Bubbles",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "blockers"
-        }
-      ],
-      "grid": [
-        "U 1 3 2 2 3 3",
-        "2 2 1 2 3 1 1",
-        "3 2 3 U 2 3 2",
-        "3 3 U U 2 1 1",
-        "2 3 3 2 1 2 3",
-        "3 2 3 2 1 1 3",
-        "2 1 2 1 3 3 U"
-      ]
-    },
-    {
-      "name": "Demo: Stones",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "boosters",
-          "count": 6
-        }
-      ],
-      "grid": [
-        "3 2 2 3 3 2 3",
-        "3 2 3 2 2 1 2",
-        "2 3 S2 2 S1 3 1",
-        "3 SB 1 SR 1 SW 3",
-        "1 3 1 2 3 2 3",
-        "1 2 3 3 2 1 2",
-        "3 C 3 C 1 C 3"
-      ]
-    },
-    {
-      "name": "Demo: Holes",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 15
-        }
-      ],
-      "grid": [
-        "0 3 2 1 3 2 0",
-        "3 1 2 2 3 2 2",
-        "1 3 0 1 0 3 3",
-        "1 3 2 0 2 2 1",
-        "2 1 0 2 0 2 2",
-        "3 3 1 3 1 1 3",
-        "0 2 1 1 2 3 0"
-      ]
-    },
-    {
-      "name": "Demo: Sliding fill",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 20
-        }
-      ],
-      "grid": [
-        "3 3 1 3 3 1 2",
-        "3 2 2 1 3 3 2",
-        "2 S3 3 S2 2 S1 1",
-        "1 3 1 3 2 2 1",
-        "1 1 3 1 3 2 2",
-        "3 2 1 2 2 3 3",
-        "1 2 1 2 1 3 1"
-      ]
-    },
-    {
-      "name": "Demo: Bonus moves",
-      "moves": 6,
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 20
-        }
-      ],
-      "grid": [
-        "2 1 1 2 2 3 1",
-        "2 1 2 M3 3 2 2",
-        "1 3 2 2 3 1 2",
-        "1 M3 3 M 1 M3 1",
-        "2 2 1 1 3 3 2",
-        "3 3 2 M3 3 2 3",
-        "3 2 2 1 2 1 2"
-      ]
-    },
-    {
-      "name": "Demo: Tools",
-      "moves": 8,
-      "goals": [
-        {
-          "type": "blockers"
-        }
-      ],
-      "grid": [
-        "I2 1 2 U 3 2 I1",
-        "3 S1 3 2 2 S1 1",
-        "1 2 1 1 3 2 2",
-        "3 1 2 1 1 2 1",
-        "2 2 3 3 2 1 2",
-        "3 S1 2 3 2 S1 1",
-        "I2 2 1 U 3 2 I1"
-      ]
-    },
-    {
-      "name": "Demo: Score stars",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 12
-        }
-      ],
-      "stars": {
-        "two": {
-          "score": 900
-        },
-        "three": {
-          "score": 1800,
-          "movesLeft": 5
-        }
-      },
-      "grid": [
-        "3 2 1 3 2 3 1",
-        "2 1 3 3 1 3 3",
-        "2 1 2 2 3 1 2",
-        "1 2 2 3 3 2 3",
-        "1 1 3 3 2 1 3",
-        "3 2 2 1 1 3 1",
-        "1 3 1 3 3 1 1"
-      ]
-    },
-    {
-      "name": "Demo: Unlimited moves",
-      "goals": [
-        {
-          "type": "collect",
-          "color": 2,
-          "count": 30
-        }
-      ],
-      "grid": [
-        "3 3 2 3 2 1 3",
-        "2 1 1 2 1 1 2",
-        "1 3 3 1 1 3 3",
-        "3 2 1 2 2 1 2",
-        "1 2 1 1 3 1 2",
-        "1 3 2 3 2 3 1",
-        "3 2 2 3 3 1 1"
-      ]
-    },
-    {
-      "name": "Demo: Color weights",
-      "moves": 20,
-      "colorWeights": {
-        "1": 1,
-        "2": 4,
-        "3": 4
-      },
-      "goals": [
-        {
-          "type": "collect",
-          "color": 1,
-          "count": 12
-        }
-      ],
-      "grid": [
-        "1 3 3 1 3 1 3",
-        "2 2 1 3 3 1 1",
-        "3 1 3 2 2 3 2",
-        "2 3 1 3 1 1 2",
-        "1 3 2 3 1 3 1",
-        "3 1 3 2 2 3 3",
-        "1 2 3 3 2 2 1"
-      ]
-    },
-    {
-      "name": "Demo: Shuffle",
-      "moves": 20,
-      "goals": [
-        {
-          "type": "collect",
-          "color": 4,
-          "count": 10
-        }
-      ],
-      "grid": [
-        "1 2 3 4 1 2",
-        "3 4 1 2 3 4",
-        "1 2 3 4 1 2",
-        "3 4 1 2 3 4",
-        "1 2 3 4 1 2",
-        "3 4 1 2 3 4"
-      ]
-    },
-    {
-      "name": "Demo: Lily pads",
-      "moves": 20,
-      "grid": [
-        "4 4 2 2 1 4 2",
-        "1 4 3 2 1 1 4",
-        "4 2 2 4 2 1 1",
-        "1 2 1 1 3 3 2",
-        "2 4 2 3 4 1 1",
-        "4 3 4 1 3 3 1",
-        "3 1 1 4 1 4 2"
-      ],
-      "water": [
-        ". . . . . . .",
-        ". > > > > v .",
-        ". ^ . . . v .",
-        ". ^ . . . v .",
-        ". ^ . . . v .",
-        ". ^ < < < < .",
-        ". . . . . . ."
-      ],
-      "goals": [
-        {
-          "type": "collect",
-          "color": 3,
-          "count": 15
-        }
-      ]
-    },
-    {
       "name": "Start",
       "moves": 20,
       "grid": [
@@ -839,19 +447,6 @@
       ]
     },
     {
-      "name": "Plane: not into a booster",
-      "moves": 15,
-      "grid": [
-        "1 2 3 1 2 3 1",
-        "2 B 1 2 3 C 2",
-        "3 1 2 3 1 2 3",
-        "1 2 3 P 2 3 1",
-        "2 3 1 2 3 1 2",
-        "3 W 2 3 1 R 3",
-        "1 2 3 1 2 3 1"
-      ]
-    },
-    {
       "name": "Plane + bomb",
       "moves": 20,
       "grid": [
@@ -975,6 +570,242 @@
         },
         {
           "type": "blockers"
+        }
+      ]
+    },
+    {
+      "name": "Ice goal: whole and cracked",
+      "moves": 22,
+      "grid": [
+        "1 2 3 C 2 3 1",
+        "2 I3 1 2 3 I1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 B 2 3 1",
+        "2 J3 1 2 3 J1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "blockers",
+          "blocker": "ice"
+        }
+      ]
+    },
+    {
+      "name": "Bubble goal: spreading",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 B 3 1 2",
+        "3 1 U 3 1 2 3",
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 U 1 2",
+        "3 1 2 P 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "blockers",
+          "blocker": "bubble"
+        }
+      ]
+    },
+    {
+      "name": "Stones: cubes and boosters",
+      "moves": 22,
+      "grid": [
+        "1 2 3 R 2 3 1",
+        "2 S3 1 2 3 SB 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 C 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 SR 2 3 1 S2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 2,
+          "count": 10
+        },
+        {
+          "type": "boosters",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Stone: column shadow",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 1 C 3 1 2",
+        "3 1 S2 3 1 2 3",
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 SC 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 1,
+          "count": 15
+        }
+      ]
+    },
+    {
+      "name": "All blockers",
+      "moves": 30,
+      "grid": [
+        "I1 2 3 1 2 3 1",
+        "2 S3 1 2 3 U 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 B 2 3 1",
+        "2 U 1 2 3 I1 2",
+        "3 1 SC 3 1 2 3",
+        "1 2 3 1 2 P 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 3,
+          "count": 12
+        },
+        {
+          "type": "blockers"
+        }
+      ]
+    },
+    {
+      "name": "Plane: bubble goal",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 U",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P 2 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "U 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "blockers",
+          "blocker": "bubble"
+        },
+        {
+          "type": "boosters",
+          "booster": "plane",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Rainbow + bomb into stones",
+      "moves": 20,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 S1 2 3 1 2",
+        "3 1 2 3 1 S2 3",
+        "1 2 3 W B 3 1",
+        "2 SB 1 2 3 1 2",
+        "3 1 2 3 SR 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "boosters",
+          "booster": "rainbow",
+          "count": 1
+        },
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Bonus stars",
+      "moves": 10,
+      "grid": [
+        "M3 2 3 1 2 3 1",
+        "2 3 1 R 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 1 2 3 1",
+        "2 3 1 2 3 M 2",
+        "3 1 2 B 1 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 2,
+          "count": 14
+        }
+      ]
+    },
+    {
+      "name": "Holes and bubble shadow",
+      "moves": 22,
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 3 U 2 3 1 2",
+        "3 1 2 3 1 2 3",
+        "1 0 3 1 0 3 1",
+        "2 3 1 2 3 1 2",
+        "3 1 2 R 1 C 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 1,
+          "count": 12
+        },
+        {
+          "type": "blockers",
+          "blocker": "bubble"
+        }
+      ]
+    },
+    {
+      "name": "Mixed goals",
+      "moves": 32,
+      "stars": {
+        "three": {
+          "score": 5000
+        }
+      },
+      "grid": [
+        "1 2 3 1 2 3 1",
+        "2 I3 1 2 3 U 2",
+        "3 1 2 3 1 2 3",
+        "1 2 3 P 2 3 1",
+        "2 U 1 2 3 I1 2",
+        "3 1 2 3 B 2 3",
+        "1 2 3 1 2 3 1"
+      ],
+      "goals": [
+        {
+          "type": "collect",
+          "color": 2,
+          "count": 10
+        },
+        {
+          "type": "boosters",
+          "booster": "bomb",
+          "count": 1
+        },
+        {
+          "type": "blockers",
+          "blocker": "ice"
+        },
+        {
+          "type": "blockers",
+          "blocker": "bubble"
         }
       ]
     }

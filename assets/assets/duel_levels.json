@@ -22,6 +22,25 @@
   "levels": [
     {
       "name": "Duel: Arena",
+      "duel": {
+        "hp": 220,
+        "maxRounds": 20,
+        "damage": {
+          "match": {
+            "3": 6,
+            "4": 10,
+            "5": 16,
+            "6": 24
+          },
+          "matchPerExtraTile": 6,
+          "boosters": {
+            "rocket": 12,
+            "bomb": 12,
+            "rainbow": 18,
+            "plane": 12
+          }
+        }
+      },
       "grid": [
         "4 2 5 1 4 5 3",
         "4 1 3 2 2 1 3",
